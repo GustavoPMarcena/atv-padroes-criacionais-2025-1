@@ -1,5 +1,6 @@
 package br.edu.ifpb.ads.padroes.atv1.rpg;
 
+import br.edu.ifpb.ads.padroes.atv1.rpg.entities.Personagem;
 import br.edu.ifpb.ads.padroes.atv1.rpg.factorys.method.PersonagemFactory;
 import br.edu.ifpb.ads.padroes.atv1.rpg.factorys.method.elfo.ElfoArqueiroFactory;
 import br.edu.ifpb.ads.padroes.atv1.rpg.factorys.method.elfo.ElfoGuerreiroFactory;

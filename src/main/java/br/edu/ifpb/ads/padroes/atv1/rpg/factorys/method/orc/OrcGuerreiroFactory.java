@@ -1,6 +1,6 @@
 package br.edu.ifpb.ads.padroes.atv1.rpg.factorys.method.orc;
 
-import br.edu.ifpb.ads.padroes.atv1.rpg.Personagem;
+import br.edu.ifpb.ads.padroes.atv1.rpg.entities.Personagem;
 import br.edu.ifpb.ads.padroes.atv1.rpg.builder.PersonagemBuilder;
 import br.edu.ifpb.ads.padroes.atv1.rpg.factorys.abs.PersonagemAbstractFactory;
 import br.edu.ifpb.ads.padroes.atv1.rpg.factorys.abs.orc.OrcGuerreiroAbstractFactory;

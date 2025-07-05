@@ -1,6 +1,6 @@
 package br.edu.ifpb.ads.padroes.atv1.rpg.factorys.method.humano;
 
-import br.edu.ifpb.ads.padroes.atv1.rpg.Personagem;
+import br.edu.ifpb.ads.padroes.atv1.rpg.entities.Personagem;
 import br.edu.ifpb.ads.padroes.atv1.rpg.builder.PersonagemBuilder;
 import br.edu.ifpb.ads.padroes.atv1.rpg.factorys.abs.humano.MagoAbstractFactory;
 import br.edu.ifpb.ads.padroes.atv1.rpg.factorys.method.PersonagemFactory;
