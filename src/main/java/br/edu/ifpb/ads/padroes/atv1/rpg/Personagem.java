@@ -1,6 +1,8 @@
 package br.edu.ifpb.ads.padroes.atv1.rpg;
 
-public class Personagem {
+import br.edu.ifpb.ads.padroes.atv1.rpg.prototype.PersonagemPrototype;
+
+public class Personagem implements PersonagemPrototype{
 
     private String nome;
     private String raca;
@@ -85,4 +87,20 @@ public class Personagem {
                 nome, raca, classe, forca, inteligencia, agilidade, vida, mana);
     }
 
+    @Override
+    public PersonagemPrototype clone() {
+        return new Personagem(
+                this.nome,
+                this.raca,
+                this.classe,
+                this.forca,
+                this.inteligencia,
+                this.agilidade,
+                this.vida,
+                this.mana,
+                new Arma(arma.getNome(), arma.getDano(), arma.getTipo()),
+                new Armadura(armadura.getNome(), armadura.getDefesa(), armadura.getTipo()),
+                this.habilidades.clone()
+        );
+    }
 }
