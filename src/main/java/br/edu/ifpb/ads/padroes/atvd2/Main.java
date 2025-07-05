@@ -9,12 +9,11 @@ import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
-// PayPal
+        // testes de paypal e stripe (nunca ouvi falar desse)
         Injector injectorPayPal = Guice.createInjector(new GatewayModule());
         PagamentoService servicePayPal = injectorPayPal.getInstance(PagamentoService.class);
         servicePayPal.pagar(BigDecimal.valueOf(100));
 
-        // Stripe
         Injector injectorStripe = Guice.createInjector(new StripeModule());
         PagamentoService serviceStripe = injectorStripe.getInstance(PagamentoService.class);
         serviceStripe.pagar(BigDecimal.valueOf(200));
