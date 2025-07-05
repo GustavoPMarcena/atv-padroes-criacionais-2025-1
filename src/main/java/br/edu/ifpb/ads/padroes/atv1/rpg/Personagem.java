@@ -89,16 +89,8 @@ public class Personagem implements PersonagemPrototype{
 
     @Override
     public PersonagemPrototype clone() {
-        return new Personagem(
-                this.nome,
-                this.raca,
-                this.classe,
-                this.forca,
-                this.inteligencia,
-                this.agilidade,
-                this.vida,
-                this.mana,
-                new Arma(arma.getNome(), arma.getDano(), arma.getTipo()),
+        return new Personagem(this.nome, this.raca, this.classe, this.forca, this.inteligencia, this.agilidade,
+                this.vida, this.mana, new Arma(arma.getNome(), arma.getDano(), arma.getTipo()),
                 new Armadura(armadura.getNome(), armadura.getDefesa(), armadura.getTipo()),
                 this.habilidades.clone()
         );
